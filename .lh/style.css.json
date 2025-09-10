@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 44,
             "patches": [
                 {
                     "date": 1757522997886,
@@ -180,6 +180,10 @@
                 {
                     "date": 1757524699692,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n }\r\n \r\n @font-face {\r\n   font-family: 'Mark Pro';\r\n-  src: url('W/MarkPro-Bold.woff2') format('woff2'),\r\n+  src: url('We/MarkPro-Bold.woff2') format('woff2'),\r\n        url('fonts/MarkPro-Bold.woff') format('woff'),\r\n        url('fonts/MarkPro-Bold.ttf') format('truetype');\r\n   font-weight: bold;\r\n   font-style: normal;\r\n"
+                },
+                {
+                    "date": 1757528579591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,5 +173,7 @@\n   transition: color 0.3s;\r\n }\r\n \r\n .vertodaslojas:hover {\r\n-  color: #b84c00; /* tom mais escuro n\n\\ No newline at end of file\n+  color: #b84c00; /* tom mais escuro no hover */\r\n+}\r\n+\r\n"
                 }
             ],
             "date": 1757522997886,
