@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MiniMercado Brugalli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="index.html">MiniMercado Brugalli</a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MiniMercado Brugalli</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="produtos.html">Produtos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="login-button"
+          data-bs-toggle="modal"
+          data-bs-target="#cadastroModal"
+        >
+          Login
+        </a>
+      </div>
+    </nav>
+    <!-- final da navbar -->
+
+    <!-- modal form-->
+    <!-- Botão para abrir o modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cadastroModal"
+      tabindex="-1"
+      aria-labelledby="cadastroModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Cabeçalho do modal -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="cadastroModalLabel">
+              Formulário de Cadastro do Cliente
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+
+          <!-- Corpo do modal com formulário -->
+          <div class="modal-body">
+            <form>
+              <!-- Nome -->
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Digite o nome completo"
+                  required
+                />
+              </div>
+
+              <!-- Endereço -->
+              <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="endereco"
+                  placeholder="Rua, número, bairro"
+                  required
+                />
+              </div>
+
+              <!-- CPF -->
+              <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cpf"
+                  placeholder="000.000.000-00"
+                  required
+                />
+              </div>
+
+              <!-- Sexo -->
+              <div class="mb-3">
+                <label class="form-label">Sexo</label><br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="sexo"
+                    id="sexoM"
+                    value="Masculino"
+                    required
+                  />
+                  <label class="form-check-label" for="sexoM">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="sexo"
+                    id="sexoF"
+                    value="Feminino"
+                  />
+                  <label class="form-check-label" for="sexoF">Feminino</label>
+                </div>
+              </div>
+
+              <!-- Telefone -->
+              <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefone"
+                  placeholder="(99) 99999-9999"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="exemplo@email.com"
+                  required
+                />
+              </div>
+
+              <!-- Newsletter -->
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="newsletter"
+                />
+                <label class="form-check-label" for="newsletter"
+                  >Desejo receber novidades por e-mail</label
+                >
+              </div>
+            </form>
+          </div>
+
+          <!-- Rodapé do modal -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <button type="submit" class="btn btn-success">
+              Salvar Cadastro
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- final do modal form-->
+    <!-- carrosel-->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="imagens/mercearia.webp"
+            class="d-block w-100 c-img"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="imagens/frontera.webp"
+            class="d-block w-100 c-img"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="imagens/confeitaria.webp"
+            class="d-block w-100 c-img"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- final do carrossel-->
+    <!-- site -->
+   
+
+    <body>
+  <div class="container my-4">
+    <h3 class="mb-3">Mercearia</h3>
+    <div class="row g-4"> <!-- g-4 adiciona espaçamento entre os cards -->
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/arroz.webp" class="card-img-top" alt="Arroz" />
+          <div class="card-body">
+            <h5 class="card-title">Arroz Branco Capellini 1kg</h5>
+            <a href="#" class="btn btn-primary">R$4,29</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/cafe.webp" class="card-img-top" alt="Café" />
+          <div class="card-body">
+            <h5 class="card-title">Café Tradicional Melitta 500g</h5>
+            <a href="#" class="btn btn-primary">R$34,98</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/feijao.jpg" class="card-img-top" alt="Café" />
+          <div class="card-body">
+            <h5 class="card-title">Feijão-preto Namorado 1kg</h5>
+            <a href="#" class="btn btn-primary">R$5,98</a>
+          </div>
+        </div>
+      </div>
+      <h3 class="mt-5 mb-3">Padaria</h3>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/paocacetinho.webp" class="card-img-top" alt="Pão Francês" />
+          <div class="card-body">
+            <h5 class="card-title">Pão Francês</h5>
+            <a href="#" class="btn btn-primary">R$1,10</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/bisnaguinha.jpg" class="card-img-top" alt="Café" />
+          <div class="card-body">
+            <h5 class="card-title">Bisnaguinha Original Seven Boys 300g</h5>
+            <a href="#" class="btn btn-primary">R$8,59</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/paociabatta.webp" class="card-img-top" alt="Pão Ciabatta" />
+          <div class="card-body">
+            <h5 class="card-title">Pão Ciabatta</h5>
+            <a href="#" class="btn btn-primary">R$5,79</a>
+          </div>
+        </div>
+      </div>
+      <h3 class="mt-5 mb-3">Bebidas</h3>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/cocazero.webp" class="card-img-top" alt="Coca Zero" />
+          <div class="card-body">
+            <h5 class="card-title">Refri Coca-Cola Zero 2L</h5>
+            <a href="#" class="btn btn-primary">R$14,90</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/agua.jpg" class="card-img-top" alt="Agua 5 Litros" />
+          <div class="card-body">
+            <h5 class="card-title">Água Mineral sem Gás Imperatriz 5 Litros</h5>
+            <a href="#" class="btn btn-primary">R$6,88</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/sucaolaranja.webp" class="card-img-top" alt="Suco Laranja" />
+          <div class="card-body">
+            <h5 class="card-title">Suco de Laranja 1L</h5>
+            <a href="#" class="btn btn-primary">R$14,90</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+         
+     
+
+  
+      <footer class="bg-light text-dark pt-5">
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <h3 class="fw-bold">Mini Mercado Brugalli</h3>
+                <p class="pt-2">Contato: contato@minimercado.com </p>
+                <p class="mb-2">Telefone: (51) 99999-9999</p>
+                <p class="pt-2">Endereço: Rua Brugalli, 12345, Porto Alegre - RS</p>
+                
+            </div>
+            <div class="col">
+                <h4>Menu</h4>
+                <ul class="list-unstyled pt-2">
+                  <li class="py-1"><a href="index.html" class="text-dark">Inicio</a></li>
+                  <li class="py-1"><a href="servicos.html" class="text-dark">Serviços</a></li>
+                  <li class="py-1"><a href="contato.html" class="text-dark">Contato</a></li>
+                  <li class="py-1"><a href="produtos.html" class="text-dark">Produtos</a></li>
+                </ul>
+
+            </div>
+            
+        </div>
+        <hr>
+        <div class="d-sm-flex justify-content-between py-1">
+            <p>Loja Online criada por <a href="https://www.lorenzobrugalli.com" target="_blank"
+          >Lorenzo Brugalli</a
+        ></p>
+            <p>
+                <a href="#" class="text-light text-decoration-none pe-4">Termos de uso</a>
+                <a href="#" class="text-light text-decoration-none"> Politica de Privacidade</a>
+            </p>
+        </div>
+    </div>
+</footer>
+      
+
+    <!-- bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

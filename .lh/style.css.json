@@ -1,0 +1,190 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1757522997886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757523169813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,4 +97,19 @@\n \r\n .footer-custom a:hover {\r\n   color: #f0f0f0; /* fica um pouco mais claro ao passar o mouse */\r\n }\r\n+.social-icons {\r\n+  padding: 0;\r\n+  margin: 0;\r\n+  list-style: none;\r\n+}\r\n+\r\n+.social-icons li {\r\n+  display: inline-block;\r\n+}\r\n+\r\n+.social-icon {\r\n+  width: 32px;  /* define tamanho fixo */\r\n+  height: 32px;\r\n+  object-fit: contain; /* mantém proporção sem esticar */\r\n+}\r\n"
+                },
+                {
+                    "date": 1757523239859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,8 @@\n   display: inline-block;\r\n }\r\n \r\n .social-icon {\r\n-  width: 32px;  /* define tamanho fixo */\r\n+  width: 10px;  /* define tamanho fixo */\r\n   height: 32px;\r\n   object-fit: contain; /* mantém proporção sem esticar */\r\n }\r\n"
+                },
+                {
+                    "date": 1757523248507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,8 @@\n   display: inline-block;\r\n }\r\n \r\n .social-icon {\r\n-  width: 10px;  /* define tamanho fixo */\r\n+  width: 20px;  /* define tamanho fixo */\r\n   height: 32px;\r\n   object-fit: contain; /* mantém proporção sem esticar */\r\n }\r\n"
+                },
+                {
+                    "date": 1757523281625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,7 +109,7 @@\n }\r\n \r\n .social-icon {\r\n   width: 20px;  /* define tamanho fixo */\r\n-  height: 32px;\r\n+  height: 20px;\r\n   object-fit: contain; /* mantém proporção sem esticar */\r\n }\r\n"
+                },
+                {
+                    "date": 1757523313720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,9 @@\n   list-style: none;\r\n }\r\n \r\n .social-icons li {\r\n-  display: inline-block;\r\n+  display: flex;\r\n }\r\n \r\n .social-icon {\r\n   width: 20px;  /* define tamanho fixo */\r\n"
+                },
+                {
+                    "date": 1757523320015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,9 @@\n }\r\n \r\n .social-icons li {\r\n   display: flex;\r\n+  align-items: flex;\r\n }\r\n \r\n .social-icon {\r\n   width: 20px;  /* define tamanho fixo */\r\n"
+                },
+                {
+                    "date": 1757523327089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,10 @@\n }\r\n \r\n .social-icons li {\r\n   display: flex;\r\n-  align-items: flex;\r\n+  align-items: flex-end;\r\n+  margin-top: ;\r\n }\r\n \r\n .social-icon {\r\n   width: 20px;  /* define tamanho fixo */\r\n"
+                },
+                {
+                    "date": 1757523349595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,18 +97,14 @@\n \r\n .footer-custom a:hover {\r\n   color: #f0f0f0; /* fica um pouco mais claro ao passar o mouse */\r\n }\r\n-.social-icons {\r\n-  padding: 0;\r\n-  margin: 0;\r\n-  list-style: none;\r\n-}\r\n \r\n+\r\n .social-icons li {\r\n   display: flex;\r\n   align-items: flex-end;\r\n-  margin-top: ;\r\n+  margin-top: 10px;\r\n }\r\n \r\n .social-icon {\r\n   width: 20px;  /* define tamanho fixo */\r\n"
+                },
+                {
+                    "date": 1757523356162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n   color: #f0f0f0; /* fica um pouco mais claro ao passar o mouse */\r\n }\r\n \r\n \r\n-.social-icons li {\r\n+.social-icons{\r\n   display: flex;\r\n   align-items: flex-end;\r\n   margin-top: 10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1757523362081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,4 @@\n   align-items: flex-end;\r\n   margin-top: 10px;\r\n }\r\n \r\n-.social-icon {\r\n-  width: 20px;  /* define tamanho fixo */\r\n-  height: 20px;\r\n-  object-fit: contain; /* mantém proporção sem esticar */\r\n-}\r\n"
+                },
+                {
+                    "date": 1757523391915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,6 +103,8 @@\n .social-icons{\r\n   display: flex;\r\n   align-items: flex-end;\r\n   margin-top: 10px;\r\n+  max-width: 23px;\r\n+    max-height: 17px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1757523397414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,7 @@\n .social-icons{\r\n   display: flex;\r\n   align-items: flex-end;\r\n   margin-top: 10px;\r\n-  max-width: 23px;\r\n-    max-height: 17px;\r\n+  \r\n }\r\n-\r\n+.so\r\n"
+                },
+                {
+                    "date": 1757523406316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,5 +105,7 @@\n   align-items: flex-end;\r\n   margin-top: 10px;\r\n   \r\n }\r\n-.so\r\n+.social-icons li{\r\n+  \r\n+}\r\n"
+                },
+                {
+                    "date": 1757523533204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,13 +99,4 @@\n   color: #f0f0f0; /* fica um pouco mais claro ao passar o mouse */\r\n }\r\n \r\n \r\n-.social-icons{\r\n-  display: flex;\r\n-  align-items: flex-end;\r\n-  margin-top: 10px;\r\n-  \r\n-}\r\n-.social-icons li{\r\n-  \r\n-}\r\n"
+                },
+                {
+                    "date": 1757523543668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,8 @@\n   text-decoration: none; /* remove sublinhado */\r\n }\r\n \r\n .footer-custom a:hover {\r\n-  color: #f0f0f0; /* fica um pouco mais claro ao passar o mouse */\r\n+  color: #b4b4b4; /* fica um pouco mais claro ao passar o mouse */\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1757523590983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,6 +97,23 @@\n \r\n .footer-custom a:hover {\r\n   color: #b4b4b4; /* fica um pouco mais claro ao passar o mouse */\r\n }\r\n+.social-icons {\r\n+  padding: 0;\r\n+  margin: 0;\r\n+  list-style: none;\r\n+  align-items: center; /* centraliza verticalmente */\r\n+}\r\n \r\n+.social-icons li {\r\n+  display: inline-block;\r\n+}\r\n \r\n+.social-icon {\r\n+  width: 40px;   /* largura fixa */\r\n+  height: 40px;  /* altura fixa */\r\n+  object-fit: contain; /* mantém proporção sem distorcer */\r\n+  display: block;\r\n+}\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1757523604441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n   display: inline-block;\r\n }\r\n \r\n .social-icon {\r\n-  width: 40px;   /* largura fixa */\r\n+  width: 20px;   /* largura fixa */\r\n   height: 40px;  /* altura fixa */\r\n   object-fit: contain; /* mantém proporção sem distorcer */\r\n   display: block;\r\n }\r\n"
+                },
+                {
+                    "date": 1757523675244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,11 @@\n   object-fit: cover;\r\n   border-radius: 50px;\r\n   padding: 8px 20px;\r\n }\r\n+footer {\r\n+  margin-top: auto; /* fixa o footer no fim */\r\n+}\r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n }\r\n@@ -110,9 +113,9 @@\n }\r\n \r\n .social-icon {\r\n   width: 20px;   /* largura fixa */\r\n-  height: 40px;  /* altura fixa */\r\n+  height: 20px;  /* altura fixa */\r\n   object-fit: contain; /* mantém proporção sem distorcer */\r\n   display: block;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1757523688339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,15 +84,16 @@\n   object-fit: cover;\r\n   border-radius: 50px;\r\n   padding: 8px 20px;\r\n }\r\n-footer {\r\n-  margin-top: auto; /* fixa o footer no fim */\r\n-}\r\n+\r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n+  footer {\r\n+  margin-top: auto; /* fixa o footer no fim */\r\n }\r\n+}\r\n \r\n .footer-custom a {\r\n   color: white;\r\n   text-decoration: none; /* remove sublinhado */\r\n"
+                },
+                {
+                    "date": 1757523695583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,13 +88,13 @@\n \r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n-  footer {\r\n+  \r\n   margin-top: auto; /* fixa o footer no fim */\r\n }\r\n-}\r\n \r\n+\r\n .footer-custom a {\r\n   color: white;\r\n   text-decoration: none; /* remove sublinhado */\r\n }\r\n"
+                },
+                {
+                    "date": 1757523738774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,15 +89,13 @@\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n   \r\n-  margin-top: auto; /* fixa o footer no fim */\r\n }\r\n \r\n-\r\n .footer-custom a {\r\n   color: white;\r\n-  text-decoration: none; /* remove sublinhado */\r\n+  text-decoration: none; \r\n }\r\n \r\n .footer-custom a:hover {\r\n   color: #b4b4b4; /* fica um pouco mais claro ao passar o mouse */\r\n"
+                },
+                {
+                    "date": 1757523745183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n   text-decoration: none; \r\n }\r\n \r\n .footer-custom a:hover {\r\n-  color: #b4b4b4; /* fica um pouco mais claro ao passar o mouse */\r\n+  color: #b4b4b4; \r\n }\r\n .social-icons {\r\n   padding: 0;\r\n   margin: 0;\r\n"
+                },
+                {
+                    "date": 1757523750323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,18 +103,18 @@\n .social-icons {\r\n   padding: 0;\r\n   margin: 0;\r\n   list-style: none;\r\n-  align-items: center; /* centraliza verticalmente */\r\n+  align-items: center; \r\n }\r\n \r\n .social-icons li {\r\n   display: inline-block;\r\n }\r\n \r\n .social-icon {\r\n-  width: 20px;   /* largura fixa */\r\n-  height: 20px;  /* altura fixa */\r\n+  width: 20px;   \r\n+  height: 20px;  \r\n   object-fit: contain; /* mantém proporção sem distorcer */\r\n   display: block;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1757523873371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,58 +1,46 @@\n-body{    background-image: url(imagens/bright_squares.png) !important;\r\n-    background-repeat: repeat !important;\r\n-    background-color: #ffffff;\r\n-    \r\n+/* === Base === */\r\n+html, body {\r\n+  height: 100%;\r\n+  margin: 0;\r\n+  padding: 0;\r\n+  background: #fff url(imagens/bright_squares.png) repeat;\r\n+  font-family: Arial, sans-serif;\r\n }\r\n-.navbar{\r\n-    background-color: #fff;\r\n-    height: 80px;\r\n-    margin: 20px;\r\n-    border-radius: 16px;\r\n-    padding: 0.5rem;\r\n-}\r\n-.navbar-brand{\r\n-    font-weight: 500;\r\n-    color: #009970;\r\n-    font-size: 24px;\r\n-}\r\n \r\n-.login-button {\r\n-  background-color: #009970;\r\n-  color: #fff;\r\n-  font-size: 14px;\r\n-  padding: 8px 20px;\r\n-  border-radius: 50px;\r\n+a {\r\n   text-decoration: none;\r\n-  transition: 0.3s background-color;\r\n+  color: inherit;\r\n }\r\n \r\n-.login-button:hover {\r\n-  background-color: #00b383;\r\n+/* === Navbar === */\r\n+.navbar {\r\n+  background-color: #fff;\r\n+  height: 80px;\r\n+  margin: 20px;\r\n+  border-radius: 16px;\r\n+  padding: 0.5rem;\r\n }\r\n \r\n-.navbar-togger {\r\n-  border: none;\r\n-  font-size: 1.25rem;\r\n+.navbar-brand {\r\n+  font-weight: 500;\r\n+  color: #009970;\r\n+  font-size: 24px;\r\n }\r\n \r\n-.navbar-togger:focus,\r\n-.btn-close:focus {\r\n-  box-shadow: none;\r\n-  outline: none;\r\n-}\r\n-\r\n .nav-link {\r\n   color: #666777;\r\n   font-weight: 500;\r\n   position: relative;\r\n+  transition: color 0.3s;\r\n }\r\n \r\n .nav-link:hover,\r\n .nav-link.active {\r\n   color: #000;\r\n }\r\n \r\n+/* Efeito underline animado */\r\n @media (min-width: 991px) {\r\n   .nav-link::before {\r\n     content: \"\";\r\n     position: absolute;\r\n@@ -61,23 +49,35 @@\n     transform: translateX(-50%);\r\n     width: 0;\r\n     height: 2px;\r\n     background-color: #009970;\r\n-    visibility: hidden;\r\n     transition: 0.3s ease-in-out;\r\n   }\r\n \r\n   .nav-link:hover::before,\r\n   .nav-link:active::before {\r\n     width: 100%;\r\n-    visibility: visible;\r\n   }\r\n }\r\n \r\n+/* === Botão Custom === */\r\n+.btn-custom {\r\n+  background-color: #009970;\r\n+  color: #fff;\r\n+  font-size: 14px;\r\n+  padding: 8px 20px;\r\n+  border-radius: 50px;\r\n+  transition: background-color 0.3s;\r\n+}\r\n+\r\n+.btn-custom:hover {\r\n+  background-color: #00b383;\r\n+}\r\n+\r\n+/* === Carousel === */\r\n .c-item {\r\n   height: 480px;\r\n   margin-top: 100px; \r\n-  \r\n }\r\n \r\n .c-img {\r\n   height: 100%;\r\n@@ -85,37 +85,34 @@\n   border-radius: 50px;\r\n   padding: 8px 20px;\r\n }\r\n \r\n+/* === Footer === */\r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n-  \r\n+  margin-top: auto;\r\n }\r\n \r\n .footer-custom a {\r\n   color: white;\r\n-  text-decoration: none; \r\n }\r\n \r\n .footer-custom a:hover {\r\n-  color: #b4b4b4; \r\n+  color: #b4b4b4;\r\n }\r\n+\r\n+/* Ícones sociais */\r\n .social-icons {\r\n+  display: flex;\r\n+  gap: 12px;\r\n   padding: 0;\r\n   margin: 0;\r\n   list-style: none;\r\n   align-items: center; \r\n }\r\n \r\n-.social-icons li {\r\n-  display: inline-block;\r\n-}\r\n-\r\n .social-icon {\r\n-  width: 20px;   \r\n-  height: 20px;  \r\n-  object-fit: contain; /* mantém proporção sem distorcer */\r\n-  display: block;\r\n+  width: 24px;   \r\n+  height: 24px;  \r\n+  object-fit: contain; \r\n }\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1757523882918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,46 +1,58 @@\n-/* === Base === */\r\n-html, body {\r\n-  height: 100%;\r\n-  margin: 0;\r\n-  padding: 0;\r\n-  background: #fff url(imagens/bright_squares.png) repeat;\r\n-  font-family: Arial, sans-serif;\r\n+body{    background-image: url(imagens/bright_squares.png) !important;\r\n+    background-repeat: repeat !important;\r\n+    background-color: #ffffff;\r\n+    \r\n }\r\n+.navbar{\r\n+    background-color: #fff;\r\n+    height: 80px;\r\n+    margin: 20px;\r\n+    border-radius: 16px;\r\n+    padding: 0.5rem;\r\n+}\r\n+.navbar-brand{\r\n+    font-weight: 500;\r\n+    color: #009970;\r\n+    font-size: 24px;\r\n+}\r\n \r\n-a {\r\n+.login-button {\r\n+  background-color: #009970;\r\n+  color: #fff;\r\n+  font-size: 14px;\r\n+  padding: 8px 20px;\r\n+  border-radius: 50px;\r\n   text-decoration: none;\r\n-  color: inherit;\r\n+  transition: 0.3s background-color;\r\n }\r\n \r\n-/* === Navbar === */\r\n-.navbar {\r\n-  background-color: #fff;\r\n-  height: 80px;\r\n-  margin: 20px;\r\n-  border-radius: 16px;\r\n-  padding: 0.5rem;\r\n+.login-button:hover {\r\n+  background-color: #00b383;\r\n }\r\n \r\n-.navbar-brand {\r\n-  font-weight: 500;\r\n-  color: #009970;\r\n-  font-size: 24px;\r\n+.navbar-togger {\r\n+  border: none;\r\n+  font-size: 1.25rem;\r\n }\r\n \r\n+.navbar-togger:focus,\r\n+.btn-close:focus {\r\n+  box-shadow: none;\r\n+  outline: none;\r\n+}\r\n+\r\n .nav-link {\r\n   color: #666777;\r\n   font-weight: 500;\r\n   position: relative;\r\n-  transition: color 0.3s;\r\n }\r\n \r\n .nav-link:hover,\r\n .nav-link.active {\r\n   color: #000;\r\n }\r\n \r\n-/* Efeito underline animado */\r\n @media (min-width: 991px) {\r\n   .nav-link::before {\r\n     content: \"\";\r\n     position: absolute;\r\n@@ -49,35 +61,23 @@\n     transform: translateX(-50%);\r\n     width: 0;\r\n     height: 2px;\r\n     background-color: #009970;\r\n+    visibility: hidden;\r\n     transition: 0.3s ease-in-out;\r\n   }\r\n \r\n   .nav-link:hover::before,\r\n   .nav-link:active::before {\r\n     width: 100%;\r\n+    visibility: visible;\r\n   }\r\n }\r\n \r\n-/* === Botão Custom === */\r\n-.btn-custom {\r\n-  background-color: #009970;\r\n-  color: #fff;\r\n-  font-size: 14px;\r\n-  padding: 8px 20px;\r\n-  border-radius: 50px;\r\n-  transition: background-color 0.3s;\r\n-}\r\n-\r\n-.btn-custom:hover {\r\n-  background-color: #00b383;\r\n-}\r\n-\r\n-/* === Carousel === */\r\n .c-item {\r\n   height: 480px;\r\n   margin-top: 100px; \r\n+  \r\n }\r\n \r\n .c-img {\r\n   height: 100%;\r\n@@ -85,34 +85,37 @@\n   border-radius: 50px;\r\n   padding: 8px 20px;\r\n }\r\n \r\n-/* === Footer === */\r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n-  margin-top: auto;\r\n+  \r\n }\r\n \r\n .footer-custom a {\r\n   color: white;\r\n+  text-decoration: none; \r\n }\r\n \r\n .footer-custom a:hover {\r\n-  color: #b4b4b4;\r\n+  color: #b4b4b4; \r\n }\r\n-\r\n-/* Ícones sociais */\r\n .social-icons {\r\n-  display: flex;\r\n-  gap: 12px;\r\n   padding: 0;\r\n   margin: 0;\r\n   list-style: none;\r\n   align-items: center; \r\n }\r\n \r\n+.social-icons li {\r\n+  display: inline-block;\r\n+}\r\n+\r\n .social-icon {\r\n-  width: 24px;   \r\n-  height: 24px;  \r\n+  width: 20px;   \r\n+  height: 20px;  \r\n   object-fit: contain; \r\n+  display: block;\r\n }\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1757523915214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n-body{    background-image: url(imagens/bright_squares.png) !important;\r\n-    background-repeat: repeat !important;\r\n-    background-color: #ffffff;\r\n-    \r\n+body{ height: 100%;\r\n+  margin: 0;\r\n+  padding: 0;\r\n+  background: #fff url(imagens/bright_squares.png) repeat;\r\n+  font-family: Arial, sans-serif;\r\n }\r\n .navbar{\r\n     background-color: #fff;\r\n     height: 80px;\r\n"
+                },
+                {
+                    "date": 1757523932105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,15 @@\n-body{ height: 100%;\r\n+body{ \r\n+  height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n   font-family: Arial, sans-serif;\r\n }\r\n+a {\r\n+  text-decoration: none;\r\n+  color: inherit;\r\n+}\r\n .navbar{\r\n     background-color: #fff;\r\n     height: 80px;\r\n     margin: 20px;\r\n"
+                },
+                {
+                    "date": 1757523960472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     padding: 0.5rem;\r\n }\r\n .navbar-brand{\r\n     font-weight: 500;\r\n-    color: #009970;\r\n+    color: rgb(234, 105, 0;\r\n     font-size: 24px;\r\n }\r\n \r\n .login-button {\r\n"
+                },
+                {
+                    "date": 1757523971354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     padding: 0.5rem;\r\n }\r\n .navbar-brand{\r\n     font-weight: 500;\r\n-    color: rgb(234, 105, 0;\r\n+    color: rgb(234, 105, 0);\r\n     font-size: 24px;\r\n }\r\n \r\n .login-button {\r\n@@ -32,9 +32,9 @@\n   transition: 0.3s background-color;\r\n }\r\n \r\n .login-button:hover {\r\n-  background-color: #00b383;\r\n+  background-color: rgb(234, 105, 0);\r\n }\r\n \r\n .navbar-togger {\r\n   border: none;\r\n"
+                },
+                {
+                    "date": 1757523978177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     font-size: 24px;\r\n }\r\n \r\n .login-button {\r\n-  background-color: #009970;\r\n+  background-color: rgb(234, 105, 0);\r\n   color: #fff;\r\n   font-size: 14px;\r\n   padding: 8px 20px;\r\n   border-radius: 50px;\r\n@@ -66,9 +66,9 @@\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     width: 0;\r\n     height: 2px;\r\n-    background-color: #009970;\r\n+    background-color:rgb(234, 105, 0);\r\n     visibility: hidden;\r\n     transition: 0.3s ease-in-out;\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1757524011437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n-  \r\n+   margin-top: auto;\r\n }\r\n \r\n .footer-custom a {\r\n   color: white;\r\n"
+                },
+                {
+                    "date": 1757524035379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,64 +1,46 @@\n-body{ \r\n+/* === Base === */\r\n+html, body {\r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n   font-family: Arial, sans-serif;\r\n }\r\n+\r\n a {\r\n   text-decoration: none;\r\n   color: inherit;\r\n }\r\n-.navbar{\r\n-    background-color: #fff;\r\n-    height: 80px;\r\n-    margin: 20px;\r\n-    border-radius: 16px;\r\n-    padding: 0.5rem;\r\n-}\r\n-.navbar-brand{\r\n-    font-weight: 500;\r\n-    color: rgb(234, 105, 0);\r\n-    font-size: 24px;\r\n-}\r\n \r\n-.login-button {\r\n-  background-color: rgb(234, 105, 0);\r\n-  color: #fff;\r\n-  font-size: 14px;\r\n-  padding: 8px 20px;\r\n-  border-radius: 50px;\r\n-  text-decoration: none;\r\n-  transition: 0.3s background-color;\r\n+/* === Navbar === */\r\n+.navbar {\r\n+  background-color: #fff;\r\n+  height: 80px;\r\n+  margin: 20px;\r\n+  border-radius: 16px;\r\n+  padding: 0.5rem;\r\n }\r\n \r\n-.login-button:hover {\r\n-  background-color: rgb(234, 105, 0);\r\n+.navbar-brand {\r\n+  font-weight: 500;\r\n+  color: #009970;\r\n+  font-size: 24px;\r\n }\r\n \r\n-.navbar-togger {\r\n-  border: none;\r\n-  font-size: 1.25rem;\r\n-}\r\n-\r\n-.navbar-togger:focus,\r\n-.btn-close:focus {\r\n-  box-shadow: none;\r\n-  outline: none;\r\n-}\r\n-\r\n .nav-link {\r\n   color: #666777;\r\n   font-weight: 500;\r\n   position: relative;\r\n+  transition: color 0.3s;\r\n }\r\n \r\n .nav-link:hover,\r\n .nav-link.active {\r\n   color: #000;\r\n }\r\n \r\n+/* Efeito underline animado */\r\n @media (min-width: 991px) {\r\n   .nav-link::before {\r\n     content: \"\";\r\n     position: absolute;\r\n@@ -66,24 +48,36 @@\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     width: 0;\r\n     height: 2px;\r\n-    background-color:rgb(234, 105, 0);\r\n-    visibility: hidden;\r\n+    background-color: #009970;\r\n     transition: 0.3s ease-in-out;\r\n   }\r\n \r\n   .nav-link:hover::before,\r\n   .nav-link:active::before {\r\n     width: 100%;\r\n-    visibility: visible;\r\n   }\r\n }\r\n \r\n+/* === Botão Custom === */\r\n+.btn-custom {\r\n+  background-color: #009970;\r\n+  color: #fff;\r\n+  font-size: 14px;\r\n+  padding: 8px 20px;\r\n+  border-radius: 50px;\r\n+  transition: background-color 0.3s;\r\n+}\r\n+\r\n+.btn-custom:hover {\r\n+  background-color: #00b383;\r\n+}\r\n+\r\n+/* === Carousel === */\r\n .c-item {\r\n   height: 480px;\r\n   margin-top: 100px; \r\n-  \r\n }\r\n \r\n .c-img {\r\n   height: 100%;\r\n@@ -91,37 +85,34 @@\n   border-radius: 50px;\r\n   padding: 8px 20px;\r\n }\r\n \r\n+/* === Footer === */\r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n-   margin-top: auto;\r\n+  margin-top: auto;\r\n }\r\n \r\n .footer-custom a {\r\n   color: white;\r\n-  text-decoration: none; \r\n }\r\n \r\n .footer-custom a:hover {\r\n-  color: #b4b4b4; \r\n+  color: #b4b4b4;\r\n }\r\n+\r\n+/* Ícones sociais */\r\n .social-icons {\r\n+  display: flex;\r\n+  gap: 12px;\r\n   padding: 0;\r\n   margin: 0;\r\n   list-style: none;\r\n   align-items: center; \r\n }\r\n \r\n-.social-icons li {\r\n-  display: inline-block;\r\n-}\r\n-\r\n .social-icon {\r\n-  width: 20px;   \r\n-  height: 20px;  \r\n+  width: 24px;   \r\n+  height: 24px;  \r\n   object-fit: contain; \r\n-  display: block;\r\n }\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1757524047316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,46 +1,64 @@\n-/* === Base === */\r\n-html, body {\r\n+body{ \r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n   font-family: Arial, sans-serif;\r\n }\r\n-\r\n a {\r\n   text-decoration: none;\r\n   color: inherit;\r\n }\r\n+.navbar{\r\n+    background-color: #fff;\r\n+    height: 80px;\r\n+    margin: 20px;\r\n+    border-radius: 16px;\r\n+    padding: 0.5rem;\r\n+}\r\n+.navbar-brand{\r\n+    font-weight: 500;\r\n+    color: rgb(234, 105, 0);\r\n+    font-size: 24px;\r\n+}\r\n \r\n-/* === Navbar === */\r\n-.navbar {\r\n-  background-color: #fff;\r\n-  height: 80px;\r\n-  margin: 20px;\r\n-  border-radius: 16px;\r\n-  padding: 0.5rem;\r\n+.login-button {\r\n+  background-color: rgb(234, 105, 0);\r\n+  color: #fff;\r\n+  font-size: 14px;\r\n+  padding: 8px 20px;\r\n+  border-radius: 50px;\r\n+  text-decoration: none;\r\n+  transition: 0.3s background-color;\r\n }\r\n \r\n-.navbar-brand {\r\n-  font-weight: 500;\r\n-  color: #009970;\r\n-  font-size: 24px;\r\n+.login-button:hover {\r\n+  background-color: rgb(234, 105, 0);\r\n }\r\n \r\n+.navbar-togger {\r\n+  border: none;\r\n+  font-size: 1.25rem;\r\n+}\r\n+\r\n+.navbar-togger:focus,\r\n+.btn-close:focus {\r\n+  box-shadow: none;\r\n+  outline: none;\r\n+}\r\n+\r\n .nav-link {\r\n   color: #666777;\r\n   font-weight: 500;\r\n   position: relative;\r\n-  transition: color 0.3s;\r\n }\r\n \r\n .nav-link:hover,\r\n .nav-link.active {\r\n   color: #000;\r\n }\r\n \r\n-/* Efeito underline animado */\r\n @media (min-width: 991px) {\r\n   .nav-link::before {\r\n     content: \"\";\r\n     position: absolute;\r\n@@ -48,36 +66,24 @@\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     width: 0;\r\n     height: 2px;\r\n-    background-color: #009970;\r\n+    background-color:rgb(234, 105, 0);\r\n+    visibility: hidden;\r\n     transition: 0.3s ease-in-out;\r\n   }\r\n \r\n   .nav-link:hover::before,\r\n   .nav-link:active::before {\r\n     width: 100%;\r\n+    visibility: visible;\r\n   }\r\n }\r\n \r\n-/* === Botão Custom === */\r\n-.btn-custom {\r\n-  background-color: #009970;\r\n-  color: #fff;\r\n-  font-size: 14px;\r\n-  padding: 8px 20px;\r\n-  border-radius: 50px;\r\n-  transition: background-color 0.3s;\r\n-}\r\n-\r\n-.btn-custom:hover {\r\n-  background-color: #00b383;\r\n-}\r\n-\r\n-/* === Carousel === */\r\n .c-item {\r\n   height: 480px;\r\n   margin-top: 100px; \r\n+  \r\n }\r\n \r\n .c-img {\r\n   height: 100%;\r\n@@ -85,34 +91,37 @@\n   border-radius: 50px;\r\n   padding: 8px 20px;\r\n }\r\n \r\n-/* === Footer === */\r\n .footer-custom {\r\n   background-color: rgb(234, 105, 0);\r\n   color: white;\r\n-  margin-top: auto;\r\n+   margin-top: auto;\r\n }\r\n \r\n .footer-custom a {\r\n   color: white;\r\n+  text-decoration: none; \r\n }\r\n \r\n .footer-custom a:hover {\r\n-  color: #b4b4b4;\r\n+  color: #b4b4b4; \r\n }\r\n-\r\n-/* Ícones sociais */\r\n .social-icons {\r\n-  display: flex;\r\n-  gap: 12px;\r\n   padding: 0;\r\n   margin: 0;\r\n   list-style: none;\r\n   align-items: center; \r\n }\r\n \r\n+.social-icons li {\r\n+  display: inline-block;\r\n+}\r\n+\r\n .social-icon {\r\n-  width: 24px;   \r\n-  height: 24px;  \r\n+  width: 20px;   \r\n+  height: 20px;  \r\n   object-fit: contain; \r\n+  display: block;\r\n }\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1757524192425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,20 @@\n body{ \r\n+  html, body {\r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n+  display: flex;\r\n+  flex-direction: column; /* empilha header, main e footer */\r\n+}\r\n+\r\n+main {\r\n+  flex: 1; /* ocupa todo o espaço disponível e empurra o footer */\r\n+}\r\n+\r\n+  height: 100%;\r\n+  margin: 0;\r\n+  padding: 0;\r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n   font-family: Arial, sans-serif;\r\n }\r\n a {\r\n"
+                },
+                {
+                    "date": 1757524206882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-body{ \r\n+gtml,body{ \r\n   html, body {\r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n"
+                },
+                {
+                    "date": 1757524215873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-gtml,body{ \r\n-  html, body {\r\n+html,body{ \r\n+  h\r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1757524223148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n html,body{ \r\n-  h\r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n   display: flex;\r\n-  flex-direction: column; /* empilha header, main e footer */\r\n+  flex-direction: column; \r\n }\r\n \r\n main {\r\n   flex: 1; /* ocupa todo o espaço disponível e empurra o footer */\r\n"
+                },
+                {
+                    "date": 1757524233290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,13 @@\n   margin: 0;\r\n   padding: 0;\r\n   display: flex;\r\n   flex-direction: column; \r\n+  height: 100%;\r\n+  margin: 0;\r\n+  padding: 0;\r\n+  background: #fff url(imagens/bright_squares.png) repeat;\r\n+  font-family: Arial, sans-serif;\r\n }\r\n \r\n main {\r\n   flex: 1; /* ocupa todo o espaço disponível e empurra o footer */\r\n"
+                },
+                {
+                    "date": 1757524239842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,8 @@\n   margin: 0;\r\n   padding: 0;\r\n   display: flex;\r\n   flex-direction: column; \r\n-  height: 100%;\r\n-  margin: 0;\r\n-  padding: 0;\r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n   font-family: Arial, sans-serif;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1757524279954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,21 +4,15 @@\n   padding: 0;\r\n   display: flex;\r\n   flex-direction: column; \r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n-  font-family: Arial, sans-serif;\r\n+  font-family: Mark;\r\n }\r\n \r\n main {\r\n   flex: 1; /* ocupa todo o espaço disponível e empurra o footer */\r\n }\r\n-\r\n-  height: 100%;\r\n-  margin: 0;\r\n-  padding: 0;\r\n-  background: #fff url(imagens/bright_squares.png) repeat;\r\n-  font-family: Arial, sans-serif;\r\n-}\r\n+ \r\n a {\r\n   text-decoration: none;\r\n   color: inherit;\r\n }\r\n"
+                },
+                {
+                    "date": 1757524620963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n+\r\n html,body{ \r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n   display: flex;\r\n   flex-direction: column; \r\n   background: #fff url(imagens/bright_squares.png) repeat;\r\n-  font-family: Mark;\r\n+  font-family: Mark PRO;\r\n }\r\n \r\n main {\r\n   flex: 1; /* ocupa todo o espaço disponível e empurra o footer */\r\n"
+                },
+                {
+                    "date": 1757524627177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,27 @@\n+@font-face {\r\n+  font-family: 'Mark Pro';\r\n+  src: url('fonts/MarkPro-Regular.woff2') format('woff2'),\r\n+       url('fonts/MarkPro-Regular.woff') format('woff'),\r\n+       url('fonts/MarkPro-Regular.ttf') format('truetype');\r\n+  font-weight: normal;\r\n+  font-style: normal;\r\n+}\r\n \r\n+@font-face {\r\n+  font-family: 'Mark Pro';\r\n+  src: url('fonts/MarkPro-Bold.woff2') format('woff2'),\r\n+       url('fonts/MarkPro-Bold.woff') format('woff'),\r\n+       url('fonts/MarkPro-Bold.ttf') format('truetype');\r\n+  font-weight: bold;\r\n+  font-style: normal;\r\n+}\r\n+\r\n+/* aplica a fonte no site inteiro */\r\n+body {\r\n+  font-family: 'Mark Pro', Arial, sans-serif;\r\n+}\r\n+\r\n html,body{ \r\n   height: 100%;\r\n   margin: 0;\r\n   padding: 0;\r\n"
+                },
+                {
+                    "date": 1757524699692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n }\r\n \r\n @font-face {\r\n   font-family: 'Mark Pro';\r\n-  src: url('W/MarkPro-Bold.woff2') format('woff2'),\r\n+  src: url('We/MarkPro-Bold.woff2') format('woff2'),\r\n        url('fonts/MarkPro-Bold.woff') format('woff'),\r\n        url('fonts/MarkPro-Bold.ttf') format('truetype');\r\n   font-weight: bold;\r\n   font-style: normal;\r\n"
+                }
+            ],
+            "date": 1757522997886,
+            "name": "Commit-0",
+            "content": "body{    background-image: url(imagens/bright_squares.png) !important;\r\n    background-repeat: repeat !important;\r\n    background-color: #ffffff;\r\n    \r\n}\r\n.navbar{\r\n    background-color: #fff;\r\n    height: 80px;\r\n    margin: 20px;\r\n    border-radius: 16px;\r\n    padding: 0.5rem;\r\n}\r\n.navbar-brand{\r\n    font-weight: 500;\r\n    color: #009970;\r\n    font-size: 24px;\r\n}\r\n\r\n.login-button {\r\n  background-color: #009970;\r\n  color: #fff;\r\n  font-size: 14px;\r\n  padding: 8px 20px;\r\n  border-radius: 50px;\r\n  text-decoration: none;\r\n  transition: 0.3s background-color;\r\n}\r\n\r\n.login-button:hover {\r\n  background-color: #00b383;\r\n}\r\n\r\n.navbar-togger {\r\n  border: none;\r\n  font-size: 1.25rem;\r\n}\r\n\r\n.navbar-togger:focus,\r\n.btn-close:focus {\r\n  box-shadow: none;\r\n  outline: none;\r\n}\r\n\r\n.nav-link {\r\n  color: #666777;\r\n  font-weight: 500;\r\n  position: relative;\r\n}\r\n\r\n.nav-link:hover,\r\n.nav-link.active {\r\n  color: #000;\r\n}\r\n\r\n@media (min-width: 991px) {\r\n  .nav-link::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    width: 0;\r\n    height: 2px;\r\n    background-color: #009970;\r\n    visibility: hidden;\r\n    transition: 0.3s ease-in-out;\r\n  }\r\n\r\n  .nav-link:hover::before,\r\n  .nav-link:active::before {\r\n    width: 100%;\r\n    visibility: visible;\r\n  }\r\n}\r\n\r\n.c-item {\r\n  height: 480px;\r\n  margin-top: 100px; \r\n  \r\n}\r\n\r\n.c-img {\r\n  height: 100%;\r\n  object-fit: cover;\r\n  border-radius: 50px;\r\n  padding: 8px 20px;\r\n}\r\n.footer-custom {\r\n  background-color: rgb(234, 105, 0);\r\n  color: white;\r\n}\r\n\r\n.footer-custom a {\r\n  color: white;\r\n  text-decoration: none; /* remove sublinhado */\r\n}\r\n\r\n.footer-custom a:hover {\r\n  color: #f0f0f0; /* fica um pouco mais claro ao passar o mouse */\r\n}\r\n"
+        }
+    ]
+}

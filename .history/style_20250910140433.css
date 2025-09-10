@@ -1,0 +1,118 @@
+/* === Base === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff url(imagens/bright_squares.png) repeat;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color: #009970;
+  font-size: 24px;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+/* Efeito underline animado */
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link:active::before {
+    width: 100%;
+  }
+}
+
+/* === Botão Custom === */
+.btn-custom {
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #00b383;
+}
+
+/* === Carousel === */
+.c-item {
+  height: 480px;
+  margin-top: 100px; 
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+/* === Footer === */
+.footer-custom {
+  background-color: rgb(234, 105, 0);
+  color: white;
+  margin-top: auto;
+}
+
+.footer-custom a {
+  color: white;
+}
+
+.footer-custom a:hover {
+  color: #b4b4b4;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center; 
+}
+
+.social-icon {
+  width: 24px;   
+  height: 24px;  
+  object-fit: contain; 
+}
